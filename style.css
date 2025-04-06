@@ -586,7 +586,6 @@ input[type="number"] {
 }
 
 
-
 .fixed-width {
   display: inline-block;
   width: 18ch; /* Reserves space for "Software Developer" */
