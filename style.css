@@ -587,3 +587,21 @@ input[type="number"] {
 
 
 
+.fixed-width {
+  display: inline-block;
+  width: 18ch; /* Reserves space for "Software Developer" */
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.1em solid transparent;
+  vertical-align: bottom;
+}
+
+#typewriter-text::after {
+  content: '|';
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
