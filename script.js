@@ -46,7 +46,6 @@ document.getElementById("contact-form").addEventListener("submit", async functio
 
 
 
-
 const textElement = document.getElementById('typewriter-text');
 const titles = ["Software Developer", "Web Developer"];
 let titleIndex = 0;
