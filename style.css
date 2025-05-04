@@ -532,9 +532,9 @@ input[type="number"] {
     width: 48%;
     padding: 1rem 3rem;
     background: rgba(0, 0, 0, 0.8);
-    border-left: 2px solid rgba(33, 33, 224, 0.521);
-    border-top: 2px solid rgba(33, 33, 224, 0.521);
-    border-bottom: 2px solid rgba(33, 33, 224, 0.521);
+    border-left: 2px solid rgba(211, 211, 211, 1);
+    border-top: 2px solid rgba(211, 211, 211, 1);
+    border-bottom: 2px solid rgba(211, 211, 211, 1);
 
     border-radius: 2rem;
     display: none;
