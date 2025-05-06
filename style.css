@@ -117,7 +117,7 @@ section{
   font-size: 4rem;
 }
 .home-content p{
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   font-weight: 500;
   line-height: 1.8;
 }
@@ -559,6 +559,11 @@ input[type="number"] {
   .home-content{
     align-items: center;
     text-align: center;
+  }
+  .home-content p{
+    font-size : 1.7rem;
+    align-items: center;
+    text-align: left;
   }
   .home-img img{
     width: 70vw;
