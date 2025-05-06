@@ -560,11 +560,18 @@ input[type="number"] {
     align-items: center;
     text-align: center;
   }
+  
   .home-content p{
     font-size : 1.7rem;
-    align-items: center;
     text-align: left;
   }
+  .home-content h1{
+  font-size: 6rem;
+  }
+  .home-content h3{
+  margin: 1rem 0;
+  }
+  
   .home-img img{
     width: 70vw;
   }
