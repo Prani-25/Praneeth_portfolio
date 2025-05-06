@@ -563,13 +563,13 @@ input[type="number"] {
   
   .home-content p{
     font-size : 1.7rem;
-    text-align: left;
   }
   .home-content h1{
-  font-size: 6rem;
+    font-size: 4rem;
   }
   .home-content h3{
-  margin: 1rem 0;
+    font-size: 2.7rem;
+    margin: 2rem 0;
   }
   
   .home-img img{
@@ -605,7 +605,6 @@ input[type="number"] {
     padding: 0.5rem;
   }
 
-  /* Responsive Icon Grid */
 .skill {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
@@ -615,20 +614,17 @@ input[type="number"] {
   padding: 2rem;
 }
 
-/* Icon Style */
 .skill i {
-  font-size: clamp(9rem, 8vw, 6rem); /* Responsive icon size */
+  font-size: clamp(9rem, 8vw, 6rem);
   padding: 1rem;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-/* Hover Effect */
 .skill i:hover {
   transform: scale(1.2) rotate(0deg);
   filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.3)) brightness(1.3);
 }
 
 }
-
 
 
