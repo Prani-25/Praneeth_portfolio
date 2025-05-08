@@ -592,7 +592,9 @@ input[type="number"] {
   } 
 
   .contact h2{
-    font-size : 23px;
+    margin-top : 1rem;
+    font-size : 27px;
+    
   }
   
   .footer{
