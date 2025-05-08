@@ -590,6 +590,10 @@ input[type="number"] {
   .contact form{
     flex-direction: column;
   } 
+
+  .contact h2{
+    font-size : 13px;
+  }
   
   .footer{
     flex-direction: column-reverse;
