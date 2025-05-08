@@ -587,6 +587,12 @@ input[type="number"] {
   .about img{
     width: 80vw;
   }
+
+  .projects h2{
+    margin-top : 1rem;
+    font-size : 27px;
+  }
+  
   .contact form{
     flex-direction: column;
   } 
@@ -594,7 +600,6 @@ input[type="number"] {
   .contact h2{
     margin-top : 1rem;
     font-size : 27px;
-    
   }
   
   .footer{
