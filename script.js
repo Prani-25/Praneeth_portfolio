@@ -47,7 +47,7 @@ document.getElementById("contact-form").addEventListener("submit", async functio
 
 
 const textElement = document.getElementById('typewriter-text');
-const titles = ["Software Developer", "Web Developer"];
+const titles = ["Software Developer", "AI Engineer"];
 let titleIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
