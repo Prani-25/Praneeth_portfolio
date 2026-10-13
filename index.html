@@ -150,37 +150,6 @@
         <p class="copyright">&#169; Praneeth | All Rights Reserved</p>
     </footer>
 
-    <script>
-       
-        new Typed('.typing', {
-            strings: ['Software Developer', 'Systems Programmer'],
-            typeSpeed: 70,
-            backSpeed: 50,
-            loop: true
-        });
-
-      
-        const sr = ScrollReveal({
-            distance: '60px',
-            duration: 2000,
-            delay: 200,
-            reset: true
-        });
-
-        sr.reveal('.home-content, .heading', { origin: 'top' });
-        sr.reveal('.home-img, .skills-container, .projects-box, .contact form', { origin: 'bottom' });
-        sr.reveal('.home-content h1, .about-img', { origin: 'left' });
-        sr.reveal('.home-content p, .about-content', { origin: 'right' });
-
-        const form = document.getElementById('contact-form');
-        const successMsg = document.getElementById('success-message');
-
-        form.onsubmit = function() {
-            setTimeout(() => {
-                successMsg.style.display = 'block';
-                form.reset();
-            }, 1000);
-        };
-    </script>
+    
 </body>
 </html>
