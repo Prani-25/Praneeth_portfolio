@@ -45,34 +45,32 @@ document.getElementById("contact-form").addEventListener("submit", async functio
   });
 
 
+new Typed('.typing', {
+            strings: ['Software Developer', 'Systems Programmer'],
+            typeSpeed: 70,
+            backSpeed: 50,
+            loop: true
+        });
 
-const textElement = document.getElementById('typewriter-text');
-const titles = ["Software Developer", "AI Engineer"];
-let titleIndex = 0;
-let charIndex = 0;
-let isDeleting = false;
+      
+        const sr = ScrollReveal({
+            distance: '60px',
+            duration: 2000,
+            delay: 200,
+            reset: true
+        });
 
-function typeWriter() {
-  const currentTitle = titles[titleIndex];
-  
-  if (isDeleting) {
-    charIndex--;
-    textElement.textContent = currentTitle.substring(0, charIndex);
-  } else {
-    charIndex++;
-    textElement.textContent = currentTitle.substring(0, charIndex);
-  }
+        sr.reveal('.home-content, .heading', { origin: 'top' });
+        sr.reveal('.home-img, .skills-container, .projects-box, .contact form', { origin: 'bottom' });
+        sr.reveal('.home-content h1, .about-img', { origin: 'left' });
+        sr.reveal('.home-content p, .about-content', { origin: 'right' });
 
-  if (!isDeleting && charIndex === currentTitle.length + 1) {
-    isDeleting = true;
-    setTimeout(typeWriter, 1000); // pause after full word
-  } else if (isDeleting && charIndex === 0) {
-    isDeleting = false;
-    titleIndex = (titleIndex + 1) % titles.length;
-    setTimeout(typeWriter, 500); // pause before next word
-  } else {
-    setTimeout(typeWriter, isDeleting ? 160 : 180);
-  }
-}
+        const form = document.getElementById('contact-form');
+        const successMsg = document.getElementById('success-message');
 
-typeWriter();
+        form.onsubmit = function() {
+            setTimeout(() => {
+                successMsg.style.display = 'block';
+                form.reset();
+            }, 1000);
+        };
