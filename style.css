@@ -84,7 +84,7 @@
         .about-content span { color: var(--main-color); font-weight: 700; margin-left: 10px; }
 
        
-        .heading { font-size: 4.5rem; text-align: center; margin-bottom: 5rem; }
+        .heading { font-size: 3.5rem; text-align: center; margin-bottom: 3rem; }
         .skills-section { background: var(--bg-color); }
         .skills-container {
             display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
