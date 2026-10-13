@@ -80,7 +80,7 @@
         .about-img img { width: 25vw; border-radius: 2rem; filter: grayscale(20%); }
         .about-content h2 { font-size: 4rem; margin-bottom: 1rem; }
         .about-content h2 span { color: var(--main-color); }
-        .about-content p { font-size: 1.4rem; line-height: 2; margin-bottom: 2rem; }
+        .about-content p { font-size: 1.3rem; line-height: 1.9; margin-bottom: 2rem; }
         .about-content span { color: var(--main-color); font-weight: 700; margin-left: 10px; }
 
        
