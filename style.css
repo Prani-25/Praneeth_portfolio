@@ -46,7 +46,7 @@
         .gradient-btn:hover { transform: scale(1.05); box-shadow: 0 0 15px var(--main-color); }
 
         
-        section { min-height: 100vh; padding: 6rem 9% 5rem; }
+        section { min-height: 100vh; padding: 7rem 9% 5rem; }
         .home { display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
         .home-content h1 { font-size: 5rem; font-weight: 700; line-height: 1.2; }
         .home-content h1 span { color: var(--main-color); }
