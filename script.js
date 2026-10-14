@@ -1,11 +1,19 @@
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
+const menuBtn = document.querySelector('#menu-icon');
+const navbar  = document.querySelector('.navbar');
 
-menuIcon.onclick = () =>{
-    menuIcon.classList.toggle('bx-x')
-    navbar.classList.toggle('active');
-}
+const setMenu = (open) => {
+  navbar.classList.toggle('active', open);
+  menuBtn.querySelector('i').classList.toggle('bx-x', open);
+  menuBtn.setAttribute('aria-expanded', open);
+};
 
+menuBtn.addEventListener('click', () => setMenu(!navbar.classList.contains('active')));
+navbar.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+document.addEventListener('keydown', e => e.key === 'Escape' && setMenu(false));
+document.addEventListener('click', e => {
+  if (!navbar.contains(e.target) && !menuBtn.contains(e.target)) setMenu(false);
+});
+window.addEventListener('resize', () => innerWidth > 1024 && setMenu(false));
 
 
 document.getElementById("contact-form").addEventListener("submit", async function (event) {
